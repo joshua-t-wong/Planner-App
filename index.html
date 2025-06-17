@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<head>
+    <title>My Website</title>
+    <!-- Linking stylesheet -->
+    <link href="./resources/style.css" rel="stylesheet">
+    <!-- Linking Font Awesome-->
+    <script src="https://kit.fontawesome.com/d7d836cb81.js" crossorigin="anonymous"></script>
+    <!-- Linking favicon -->
+    <link href="./resources/favicon/favicon.ico" rel="icon">
+    <!-- Linking fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header">
+        <!-- Website title -->
+        <div id="website-title">
+            <h2>Planner App</h2>
+        </div>
+        <!-- Tabs section -->
+        <div id="tabs">
+            <div class="tab" id="habit-tracker-tab">
+                <h5>Habit Tracker</h6>
+                <i class="fa-solid fa-arrows-spin"></i>
+            </div>
+            <div class="tab" id="to-do-list-tab">
+                <h5>To-Do List</h6>
+                <i class="fa-solid fa-list-check"></i>
+            </div>
+        </div>
+    </div>
+    <div id="habit-tracker">
+        <div id="todays-habits">
+            <div class="header">
+                <h2>Today's Habits</h2>
+                <h5>Good evening, Joshua! Below is a quick snapshot of the habits you need to complete today.</h5>
+            </div>
+            <div id="list">
+                <h5>No habits left today!</h5>
+            </div>
+        </div>
+        <div id="habit-table">
+            <div class="header">
+                <h2>Habit Table</h2>
+                <h5>A weekly table showing all your habits!</h5>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col" class="day">Sunday</th>
+                            <th scope="col" class="day">Monday</th>
+                            <th scope="col" class="day">Tuesday</th>
+                            <th scope="col" class="day">Wednesday</th>
+                            <th scope="col" class="day">Thursday</th>
+                            <th scope="col" class="day">Friday</th>
+                            <th scope="col" class="day">Saturday</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="habit-table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="new-habit">
+            <div class="header">
+                <h2>Create a Habit</h2>
+                <h5>Below, you can create new habits that you want to build every day!</h5>
+            </div>
+            <div class="form-container">
+                <form name="habit-form">
+
+                    <div>
+                        <label for="habit-name">Habit name:</label>
+                        <input type="text" name="habit-name" id="habit-name" placeholder="Ex. Run in the morning" required/>
+                    </div>
+                    
+                    <div>
+                        <input type="submit" name="submit" id="submit"/>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="to-do-list">
+        <div class="header">
+            <h2>To-Do List</h2>
+            <h5>A page for all your to-do items!</h5>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Task Name</th>
+                        <th scope="col">Due Date</th>
+                        <th scope="col">Checked?</th>
+                        <th scope="col">Edit/Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody id="task-table-body">
+                </tbody>
+                
+            </table>
+        </div>
+        <div class="form-container">
+            <form name="task-form">
+
+                <div>
+                    <label for="task-name">Task name:</label>
+                    <input type="text" name="task-name" id="task-name" placeholder="Ex. Take out garbage" required/>
+                </div>
+            
+                <div>
+                    <label for="task-due-date">Task due date (optional):</label>
+                    <input type="date" name="task-due-date" id="task-due-date"/>
+                </div>
+
+                <div>
+                    <input type="submit" name="submit" id="submit">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
