@@ -1,10 +1,11 @@
 html {
     font-family: "Montserrat";
+    color: white;
 }
 
 /* header */
 #header {
-    background-color: rgb(200, 200, 200);
+    background-color: #FFFFFF;
     height: 100px;
     width: 100%;
     display: flex;
@@ -13,6 +14,7 @@ html {
 }
 
 #website-title {
+    color: #33664D;
     display: inline-block;
     margin-left: 25px;
 }
@@ -27,7 +29,7 @@ html {
 
 .tab {
     display: inline;
-    background-color: rgb(125, 125, 125);
+    background-color: #33664D;
     padding: 10px;
     border-radius: 5px;
     margin: 20px;
@@ -35,7 +37,7 @@ html {
 }
 
 .tab:hover {
-    background-color: rgb(75, 75, 75);
+    background-color: #006D91;
 }
 
 .tab h5, .tab i {
@@ -44,13 +46,13 @@ html {
 
 /* habit tracker section */
 #habit-tracker {
-    background-color: rgb(150, 150, 150);
+    background-color: #596C80;
     overflow: hidden;
 }
 
 /* today's habits sections */
 #todays-habits {
-    background-color: rgb(90, 90, 90);
+    background-color: #33664D;
     height: 500px;
     border-radius: 5px;
     margin: 40px;
@@ -71,8 +73,7 @@ html {
 }
 
 #todays-habits #list .habit {
-    background-color: black;
-    color: white;
+    background-color: #405080;
     height: 100px;
     width: 300px;
     border-radius: 5px;
@@ -81,7 +82,7 @@ html {
 
 /* habits table section */
 #habit-table {
-    background-color: rgb(90, 90, 90);
+    background-color: #33664D;
     height: 500px;
     border-radius: 5px;
     margin: 40px;
@@ -103,16 +104,14 @@ html {
 }
 
 #habit-table th {
-    background-color: rgb(50, 50, 50);
+    background-color: #405080;
     padding: 5px 15px 5px 15px;
-    color: white;
     line-height: 2;
 }
 
 #habit-table td {
-    background-color: rgb(50, 50, 50);
+    background-color: #405080;
     padding: 10px;
-    color: white;
     line-height: 2;
     position: relative;
 }
@@ -155,7 +154,7 @@ html {
 
 /* new habit section */
 #new-habit {
-    background-color: rgb(90, 90, 90);
+    background-color: #33664D;
     height: 220px;
     border-radius: 5px;
     margin: 40px;
@@ -169,7 +168,7 @@ html {
 
 /* to do list section */
 #to-do-list {
-    background-color: rgb(150, 150, 150);
+    background-color: #33664D;
     padding-bottom: 50px;
 }
 
@@ -189,7 +188,7 @@ html {
 }
 
 #to-do-list th, #to-do-list td {
-    background-color: rgb(100, 100, 100);
+    background-color: #405080;
     padding: 5px;
     line-height: 2;
 }
@@ -213,7 +212,7 @@ html {
 /* new habit form */
 
 #new-habit form {
-    background-color: rgb(50, 50, 50);
+    background-color: #405080;
     color: white;
     width: 30%;
     height: 50px;
@@ -225,7 +224,7 @@ html {
 }
 
 #new-habit #habit-name, #new-habit #submit {
-    background-color: rgb(70, 70, 70);
+    background-color: #405080;
     color: white;
     border: 1px solid black;
     border-radius: 3px;
@@ -239,7 +238,6 @@ html {
 
 #new-habit #habit-name::placeholder {
     color: white;
-    opacity: 0.75;
 }
 
 /* to do list form */
@@ -251,7 +249,7 @@ html {
 }
 
 #to-do-list form {
-    background-color: rgb(100, 100, 100);
+    background-color: #405080;
     min-width: 35%;
     border-radius: 5px;
     text-align: center;
@@ -261,8 +259,9 @@ html {
 #to-do-list #task-name,
 #to-do-list #task-due-date,
 #to-do-list #submit {
-    background-color: rgb(100, 100, 100);
+    background-color: #405080;
     border: 1px solid black;
+    border-radius: 3px;
     font-family: "Montserrat";
 }
 
